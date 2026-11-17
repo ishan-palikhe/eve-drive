@@ -21,3 +21,7 @@ GitHub Pages is configured through the workflow in `.github/workflows/pages.yml`
 - Screen mirroring to the car is handled separately by ScreenOnAuto; Eve Drive itself does not install on the BYD head unit.
 
 No analytics, account, or backend are used.
+
+## GitHub Pages
+
+The repository is configured to deploy from the GitHub Actions workflow at `.github/workflows/pages.yml`. After setting **Settings → Pages → Source → GitHub Actions**, each push to `main` triggers a fresh deployment.
