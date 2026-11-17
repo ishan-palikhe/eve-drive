@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#081722"><meta name="description" content="Eve Drive — your personal driving dashboard.">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icons/eve-drive.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+<title>Eve Drive</title>
+</head>
+<body>
+<main class="shell">
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">E</span><span>EVE <b>DRIVE</b></span></a><div class="topright"><span id="date">--</span><strong id="clock">--:--</strong><button class="icon-btn" id="fullscreen" aria-label="Toggle full screen">⛶</button></div></header>
+<section class="welcome"><div><p class="eyebrow">YOUR DRIVE, SIMPLIFIED</p><h1 id="greeting">Good evening.</h1><p class="sub">A calmer, cleaner way to start every journey.</p></div><div class="vehicle"><div class="vehicle-top"><span>VEHICLE PROFILE</span><i></i></div><div class="car"><div class="car-roof"></div><div class="car-body"><span>BYD</span></div><div class="wheel left"></div><div class="wheel right"></div></div><div class="vehicle-name">SEALION 6 <small>DM-i</small></div><p class="muted">Personal dashboard · Not connected to vehicle data</p></div></section>
+<section class="panels">
+<article class="panel navigation"><div class="panel-heading"><div><p class="eyebrow">NAVIGATION</p><h2>Where to?</h2></div><span class="status">READY</span></div><div class="map"><div class="road r1"></div><div class="road r2"></div><div class="road r3"></div><div class="route"></div><div class="pin">●</div><span class="map-caption">Your next destination starts here</span></div><form id="destination-form" class="search"><input id="destination" autocomplete="off" placeholder="Enter a destination…" aria-label="Destination"><button type="submit">GO <span>↗</span></button></form><button class="wide-btn" id="open-maps">OPEN GOOGLE MAPS ↗</button></article>
+<article class="panel entertainment"><div class="panel-heading"><div><p class="eyebrow">ENTERTAINMENT</p><h2>Set the mood.</h2></div><span class="music-note">♫</span></div><div class="music-art"><span>♫</span><div>YOUR DRIVE<br><b>YOUR SOUND</b></div></div><p class="track-title">Ready when you are</p><p class="muted">Open your favourite music app.</p><button class="wide-btn primary" id="open-music">OPEN YOUTUBE MUSIC ↗</button></article>
+</section>
+<section class="quick-section"><div class="section-title"><p class="eyebrow">QUICK ACCESS</p><span class="muted">YOUR APPS, ONE TAP AWAY</span></div><div class="quick-grid">
+<button class="quick" data-app="maps"><span>⌖</span><b>Maps</b></button><button class="quick" data-app="music"><span>♫</span><b>Music</b></button><button class="quick" data-app="phone"><span>☎</span><b>Phone</b></button><button class="quick" data-app="weather"><span>☼</span><b>Weather</b></button><button class="quick" data-app="browser"><span>◎</span><b>Browser</b></button><button class="quick" data-app="settings"><span>⚙</span><b>Settings</b></button>
+</div></section>
+<footer><span>EVE DRIVE <i>•</i> MADE FOR THE JOURNEY</span><span id="status-text">Dashboard ready</span></footer>
+</main><div id="toast" role="status" aria-live="polite"></div><script src="./app.js"></script>
+</body></html>
