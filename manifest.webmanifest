@@ -1,0 +1,13 @@
+{
+  "name": "Eve Drive",
+  "short_name": "Eve Drive",
+  "description": "Your personal driving dashboard.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "any",
+  "background_color": "#081722",
+  "theme_color": "#081722",
+  "icons": [{"src":"./icons/eve-drive.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
